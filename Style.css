@@ -1,0 +1,76 @@
+/* Fonts */
+
+:root {
+    --green-color: rgb(103, 255, 143);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #232323;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    color: var(--green-color);
+}
+
+.container {
+    max-width: 800px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 12%;
+}
+
+.illustration img {
+    width: 455px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+.container h1 span {
+    color: var(--green-color);
+    border-bottom: 2px solid var(--green-color);
+}
+
+.display input {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #1a1a1a;
+    border-radius: 3px;
+    outline: none;
+}
+
+.display {
+    position: relative;
+}
+
+.display i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--green-color);
+    cursor: pointer;
+}
